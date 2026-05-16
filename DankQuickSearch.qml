@@ -16,6 +16,7 @@ QtObject {
     property var engines: [
         { id: "duckduckgo", name: "DuckDuckGo", icon: "material:search", prefix: "", url: "https://duckduckgo.com/?q=" },
         { id: "google", name: "Google", icon: "material:search", prefix: "g", url: "https://www.google.com/search?q=" },
+        { id: "Startpage", name: "startpage", icon: "material:search", prefix: "s", url: "https://www.startpage.com/search?q=" },
         { id: "github", name: "GitHub", icon: "material:code", prefix: "gh", url: "https://github.com/search?q=" },
         { id: "youtube", name: "YouTube", icon: "material:play_circle", prefix: "yt", url: "https://www.youtube.com/results?search_query=" }
     ]

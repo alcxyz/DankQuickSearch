@@ -59,6 +59,7 @@ PluginSettings {
                 options: [
                     { value: "duckduckgo", label: "DuckDuckGo" },
                     { value: "google", label: "Google" },
+                   { value: "startpage", label: "Startpage" },
                     { value: "github", label: "GitHub" },
                     { value: "youtube", label: "YouTube" }
                 ]
@@ -99,7 +100,7 @@ PluginSettings {
             }
 
             StyledText {
-                text: I18n.tr("g — Google\ngh — GitHub\nyt — YouTube\n\nType a URL directly to open it in your browser.")
+                text: I18n.tr("g — Google\s — Startpage\ngh — GitHub\nyt — YouTube\n\nType a URL directly to open it in your browser.")
                 font.pixelSize: Theme.fontSizeSmall
                 color: Theme.surfaceVariantText
                 wrapMode: Text.WordWrap
