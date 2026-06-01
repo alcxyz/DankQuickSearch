@@ -1,7 +1,7 @@
 {
     "id": "dankQuickSearch",
     "name": "Quick Search",
-    "description": "Minimal web search from the launcher with engine prefixes",
+    "description": "Minimal web search and AI chat prompts from the launcher with engine prefixes",
     "version": "0.3.0",
     "author": "alcxyz",
     "icon": "travel_explore",

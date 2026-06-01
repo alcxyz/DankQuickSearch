@@ -8,7 +8,7 @@
 
 DMS's Scorer.js filters launcher items by text-matching item names/subtitles against the raw query. For trigger-activated plugins, the query passed to the Scorer is the text after the trigger character (e.g. `yt hello world` for `!yt hello world`). Plugin items whose names don't textually match this query score 0 and are filtered out.
 
-This caused multi-character engine prefixes (`!yt`, `!gh`) to break — the prefix text (`yt`) was included in the Scorer query but didn't match the item names (e.g. "hello world"), so all results were dropped. Single-character prefixes (`!w`, `!g`) happened to pass due to fuzzy matching thresholds.
+This caused multi-character engine prefixes (`!yt`, `!gh`, and later `!gpt`) to break — the prefix text (`yt`) was included in the Scorer query but didn't match the item names (e.g. "hello world"), so all results were dropped. Single-character prefixes like `!g` happened to pass due to fuzzy matching thresholds.
 
 ## Decision
 
