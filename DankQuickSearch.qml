@@ -17,7 +17,10 @@ QtObject {
         { id: "duckduckgo", name: "DuckDuckGo", icon: "material:search", prefix: "", url: "https://duckduckgo.com/?q=" },
         { id: "google", name: "Google", icon: "material:search", prefix: "g", url: "https://www.google.com/search?q=" },
         { id: "github", name: "GitHub", icon: "material:code", prefix: "gh", url: "https://github.com/search?q=" },
-        { id: "youtube", name: "YouTube", icon: "material:play_circle", prefix: "yt", url: "https://www.youtube.com/results?search_query=" }
+        { id: "youtube", name: "YouTube", icon: "material:play_circle", prefix: "yt", url: "https://www.youtube.com/results?search_query=" },
+        { id: "t3chat", name: "T3 Chat", icon: "material:chat", prefix: "t3", url: "https://t3.chat/new?q=" },
+        { id: "chatgpt", name: "ChatGPT", icon: "material:smart_toy", prefix: "gpt", url: "https://chatgpt.com/?q=" },
+        { id: "claude", name: "Claude", icon: "material:psychology", prefix: "cl", url: "https://claude.ai/new?q=" }
     ]
 
     Component.onCompleted: {
