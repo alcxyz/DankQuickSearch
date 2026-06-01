@@ -80,7 +80,7 @@ echo "engine definitions"
 
 # Each engine needs id, name, icon, prefix, url
 ENGINE_COUNT=$(grep -c '{ id:' "$COMPONENT" || true)
-assert_eq "4 search engines defined" "4" "$ENGINE_COUNT"
+assert_eq "7 search engines defined" "7" "$ENGINE_COUNT"
 
 # No Wikipedia engine (was removed)
 if grep -q 'wikipedia' "$COMPONENT"; then
@@ -90,7 +90,7 @@ else
 fi
 
 # Required engines present
-for engine in duckduckgo google github youtube; do
+for engine in duckduckgo google github youtube t3chat chatgpt claude; do
     if grep -q "\"$engine\"" "$COMPONENT"; then
         pass "$engine engine present"
     else
@@ -103,7 +103,7 @@ done
 echo "URL construction"
 
 # Verify search URLs end with query parameter
-for url_part in "duckduckgo.com/?q=" "google.com/search?q=" "github.com/search?q=" "youtube.com/results?search_query="; do
+for url_part in "duckduckgo.com/?q=" "google.com/search?q=" "github.com/search?q=" "youtube.com/results?search_query=" "t3.chat/new?q=" "chatgpt.com/?q=" "claude.ai/new?q="; do
     if grep -q "$url_part" "$COMPONENT"; then
         pass "valid URL pattern: $url_part"
     else
