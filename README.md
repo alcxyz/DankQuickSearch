@@ -1,12 +1,13 @@
 # DankQuickSearch
 
-A minimal launcher plugin for [DankMaterialShell](https://github.com/AvengeMedia/DankMaterialShell) that adds quick web search with engine prefixes.
+A minimal launcher plugin for [DankMaterialShell](https://github.com/AvengeMedia/DankMaterialShell) that adds quick web search and AI chat prompts with engine prefixes.
 
 ![Screenshot](docs/screenshot.png)
 
 ## Features
 
-- Search DuckDuckGo, Google, GitHub, YouTube, T3 Chat, ChatGPT, and Claude from the launcher
+- Search DuckDuckGo, Google, GitHub, and YouTube from the launcher
+- Start browser-based chats with T3 Chat, ChatGPT, and Claude
 - Engine prefixes for quick switching (`g`, `gh`, `yt`, `t3`, `gpt`, `cl`)
 - Direct URL detection — type a URL to open it
 - Configurable default search engine
