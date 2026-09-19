@@ -111,6 +111,10 @@ for url_part in "duckduckgo.com/?q=" "google.com/search?q=" "github.com/search?q
     fi
 done
 
+# ── packaged build identity ─────────────────────────────────────────
+
+python3 -m unittest discover -s tests -p 'test_*.py'
+
 # ── summary ──────────────────────────────────────────────────────────
 
 echo ""

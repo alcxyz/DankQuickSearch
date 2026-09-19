@@ -35,6 +35,8 @@ programs.dank-material-shell.plugins.dankQuickSearch = {
 ### Manual
 
 Copy the plugin directory to `~/.config/DankMaterialShell/plugins/DankQuickSearch/`.
+For an identifiable development build, stage `dist/dev` first and copy
+`dist/dev/share/dms-plugins/DankQuickSearch/` instead of the raw checkout.
 
 ## Usage
 
@@ -52,6 +54,20 @@ Activate with `!` (default trigger) in the DMS launcher, then:
 ## Requirements
 
 - `xdg-open` (for opening URLs in the default browser)
+
++## Development builds
+
+The tracked manifest keeps the release version. To stage an identifiable
+development package, run:
+
+```bash
+python3 scripts/package.py --output dist/dev
+```
+
+This produces a manifest version like `X.Y.Z-dev.<commit>`; a dirty checkout
+adds `.dirty`. For Nix, use `pkgs.callPackage ./default.nix { revision = ...; }`.
+Release packaging is guarded and requires a clean checkout at the exact
+`vX.Y.Z` tag.
 
 ## License
 
